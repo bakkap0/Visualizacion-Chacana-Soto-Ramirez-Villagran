@@ -4,12 +4,10 @@ Proyecto del curso **EIN092B Visualización** — UTFSM, Profesor Jesús A. Parr
 
 ## Integrantes
 
-- Chacana [Nombre]
-- Soto [Nombre]
-- Ramírez [Nombre]
-- Villagrán [Nombre]
-
-> *(Completar con nombres completos y, si se requiere, correos institucionales)*
+- Gabriel Chacana
+- Frank Soto
+- Joaquín Ramírez
+- Felipe Villagrán
 
 ## Descripción breve del problema
 
@@ -55,30 +53,8 @@ Ambas fuentes son datos públicos y abiertos del Estado de Chile. La descarga hi
 - **Cobertura espacial:** hasta 14 estaciones distribuidas en las tres comunas, geolocalizadas (lat/lon).
 - **Historia que se busca explorar:** identificar patrones horarios/estacionales de contaminación, comparar comunas y estaciones, y visibilizar la frecuencia de episodios que superan la norma.
 
-## Estructura general del repositorio
 
-```
-Vizualizacion-Chacana-Soto-Ramirez-Villagran/
-|
-|-- data/
-|   |-- raw/            # datos originales descargados de SINCA / airecqp, sin modificar
-|   `-- processed/      # datos limpios y transformados
-|
-|-- notebooks/
-|   `-- 01_exploracion.ipynb
-|
-|-- src/                # funciones y código reutilizable
-|
-|-- figures/             # gráficos y recursos visuales generados
-|
-|-- app/                 # futura aplicación Streamlit / dashboard
-|
-|-- README.md
-`-- .gitignore
-```
 
 > **Nota sobre los datos:** dado que las descargas históricas de SINCA pueden ser pesadas o requerir selección manual por estación, no se incluyen directamente en `data/raw/`. En su lugar, `data/raw/README.md` documentará el procedimiento exacto de descarga (URL, estaciones, contaminantes y rango de fechas seleccionados) para que el proceso sea reproducible por cualquier integrante del equipo o el profesor.
 
 ---
-
-*Este README corresponde al Avance 1 (Formulación del proyecto). Se espera que evolucione con los siguientes avances: EDA y visualización, producto analítico, y presentación final.*
