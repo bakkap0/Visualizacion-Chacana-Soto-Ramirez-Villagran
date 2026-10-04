@@ -1,0 +1,42 @@
+[
+  {
+    "estacion_id": 188,
+    "codigo_serie": "548",
+    "estacion": "Ventanas",
+    "comuna": "Puchuncaví",
+    "propietario": "Codelco División Ventanas- AESGENER.S.A",
+    "operador": "SGS Chile Ltda.",
+    "nota_alcance": "Estación histórica; no confundir con la nueva red pública",
+    "fuente": "https://sinca.mma.gob.cl/index.php/estacion/index/id/188"
+  },
+  {
+    "estacion_id": 278,
+    "codigo_serie": "503",
+    "estacion": "La Greda",
+    "comuna": "Puchuncaví",
+    "propietario": "Codelco División Ventanas- AESGENER.S.A",
+    "operador": "SGS Chile Ltda.",
+    "nota_alcance": "Estación histórica; no confundir con la nueva red pública",
+    "fuente": "https://sinca.mma.gob.cl/index.php/estacion/index/id/278"
+  },
+  {
+    "estacion_id": 204,
+    "codigo_serie": "539",
+    "estacion": "Centro Quintero",
+    "comuna": "Quintero",
+    "propietario": "GNL Quintero",
+    "operador": "SGS Chile Ltda.",
+    "nota_alcance": "Nombre oficial del foco Quintero Centro",
+    "fuente": "https://sinca.mma.gob.cl/index.php/estacion/index/id/204"
+  },
+  {
+    "estacion_id": 185,
+    "codigo_serie": "509",
+    "estacion": "Concón",
+    "comuna": "Concón",
+    "propietario": "ENAP",
+    "operador": "SGS Chile Ltda.",
+    "nota_alcance": "Reemplazo explícito de Concón Oeste; no se asume identidad entre ambas",
+    "fuente": "https://sinca.mma.gob.cl/index.php/estacion/index/id/185"
+  }
+]

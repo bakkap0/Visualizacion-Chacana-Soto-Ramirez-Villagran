@@ -1,0 +1,33 @@
+﻿columna,tipo,unidad,descripcion
+fecha_hora,fecha/hora,,Fecha y hora originales de SINCA; sin asignar offset UTC
+estacion_id,entero,,Identificador de la ficha SINCA
+codigo_serie,entero,,Código interno RV de la serie
+estacion,texto,,Nombre oficial de la estación
+comuna,texto,,Comuna de la estación
+direccion_viento_grados,numerico,Deg.M,Dirección horaria del viento; etiqueta original Deg.M
+humedad_relativa_pct,numerico,%,Humedad relativa horaria; solo Concón
+mp10_ug_m3n,numerico,ug/m3N,Concentración horaria MP10
+mp25_ug_m3,numerico,ug/m3,Concentración horaria MP2.5
+so2_ppb,numerico,ppb,Concentración horaria SO2
+temperatura_c,numerico,deg.C,Temperatura horaria; solo Concón
+velocidad_viento_m_s,numerico,m/s,Velocidad horaria del viento
+direccion_viento_grados_estado,categoria,,"Estado de clasificación de direccion_viento_grados: validado, preliminar, no_validado, sin_dato, sin_clasificacion_en_exportacion o variable_no_descargada_para_estacion"
+humedad_relativa_pct_estado,categoria,,"Estado de clasificación de humedad_relativa_pct: validado, preliminar, no_validado, sin_dato, sin_clasificacion_en_exportacion o variable_no_descargada_para_estacion"
+mp10_ug_m3n_estado,categoria,,"Estado de clasificación de mp10_ug_m3n: validado, preliminar, no_validado, sin_dato, sin_clasificacion_en_exportacion o variable_no_descargada_para_estacion"
+mp25_ug_m3_estado,categoria,,"Estado de clasificación de mp25_ug_m3: validado, preliminar, no_validado, sin_dato, sin_clasificacion_en_exportacion o variable_no_descargada_para_estacion"
+so2_ppb_estado,categoria,,"Estado de clasificación de so2_ppb: validado, preliminar, no_validado, sin_dato, sin_clasificacion_en_exportacion o variable_no_descargada_para_estacion"
+temperatura_c_estado,categoria,,"Estado de clasificación de temperatura_c: validado, preliminar, no_validado, sin_dato, sin_clasificacion_en_exportacion o variable_no_descargada_para_estacion"
+velocidad_viento_m_s_estado,categoria,,"Estado de clasificación de velocidad_viento_m_s: validado, preliminar, no_validado, sin_dato, sin_clasificacion_en_exportacion o variable_no_descargada_para_estacion"
+direccion_viento_grados_fuera_rango,booleano,,Bandera de rango básico para direccion_viento_grados. False no acredita validez instrumental; vacío si serie no descargada
+humedad_relativa_pct_fuera_rango,booleano,,Bandera de rango básico para humedad_relativa_pct. False no acredita validez instrumental; vacío si serie no descargada
+mp10_ug_m3n_fuera_rango,booleano,,Bandera de rango básico para mp10_ug_m3n. False no acredita validez instrumental; vacío si serie no descargada
+mp25_ug_m3_fuera_rango,booleano,,Bandera de rango básico para mp25_ug_m3. False no acredita validez instrumental; vacío si serie no descargada
+so2_ppb_fuera_rango,booleano,,Bandera de rango básico para so2_ppb. False no acredita validez instrumental; vacío si serie no descargada
+temperatura_c_fuera_rango,booleano,,Bandera de rango básico para temperatura_c. False no acredita validez instrumental; vacío si serie no descargada
+velocidad_viento_m_s_fuera_rango,booleano,,Bandera de rango básico para velocidad_viento_m_s. False no acredita validez instrumental; vacío si serie no descargada
+fecha,fecha/hora,,Fecha calendario derivada
+anio,entero,,Año calendario
+mes,entero,,Mes 1–12
+hora,entero,,Hora 0–23
+dia_semana,entero,,"Día de semana, lunes=0 y domingo=6"
+estacion_anio,texto,,Agrupación por meses del hemisferio sur

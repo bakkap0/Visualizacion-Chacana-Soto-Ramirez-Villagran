@@ -1,0 +1,9 @@
+﻿estacion,n_pares,spearman,predictor
+Centro Quintero,0,,temperatura_c
+Concón,25309,0.019180971242389457,temperatura_c
+La Greda,0,,temperatura_c
+Ventanas,0,,temperatura_c
+Centro Quintero,0,,humedad_relativa_pct
+Concón,25309,-0.10180194339934062,humedad_relativa_pct
+La Greda,0,,humedad_relativa_pct
+Ventanas,0,,humedad_relativa_pct

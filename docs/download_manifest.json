@@ -1,0 +1,400 @@
+[
+  {
+    "station_id": "278",
+    "station_code": "503",
+    "station": "La Greda",
+    "commune": "Puchuncaví",
+    "parameter": "0001",
+    "group": "Cal",
+    "macro": "0001.horario.horario",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F503%2FCal%2F0001%2F%2F0001.horario.horario.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/503_0001_2023_2025.txt",
+    "bytes": 1424219,
+    "sha256": "be5627f80f990c607f832a4b98e184d33729bd299e12394efbacc46a80f28bbc",
+    "download_utc": "2026-10-04T15:52:03.852816+00:00",
+    "plot_variables": [
+      "# 1. Registros validados (ppb) (Ty>=2018 OR (Ty>=2017 AND Tm>=5 AND Td>=1)?round(x1[1], 2):x1[1])",
+      "# 2. Registros preliminares (ppb) (!exist(x1[1])?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x2[1], 2):x2[1]):@)",
+      "# 3. Registros no validados (ppb) ((!exist(x1[1]) AND !exist(x2[1]))?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x3[1], 2):x3[1]):@)"
+    ]
+  },
+  {
+    "station_id": "278",
+    "station_code": "503",
+    "station": "La Greda",
+    "commune": "Puchuncaví",
+    "parameter": "PM10",
+    "group": "Cal",
+    "macro": "PM10.horario.horario",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F503%2FCal%2FPM10%2F%2FPM10.horario.horario.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/503_PM10_2023_2025.txt",
+    "bytes": 1424237,
+    "sha256": "632c1a011efff2422eb56023d822b719854d0846c71b8803cbc18c96b44c7f2c",
+    "download_utc": "2026-10-04T15:52:03.835657+00:00",
+    "plot_variables": [
+      "# 1. Registros validados (ug/m3N) (Ty>=2018 OR (Ty>=2017 AND Tm>=5 AND Td>=1)?round(x1[1], 0):x1[1])",
+      "# 2. Registros preliminares (ug/m3N) (!exist(x1[1])?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x2[1], 0):x2[1]):@)",
+      "# 3. Registros no validados (ug/m3N) ((!exist(x1[1]) AND !exist(x2[1]))?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x3[1], 0):x3[1]):@)"
+    ]
+  },
+  {
+    "station_id": "278",
+    "station_code": "503",
+    "station": "La Greda",
+    "commune": "Puchuncaví",
+    "parameter": "PM25",
+    "group": "Cal",
+    "macro": "PM25.horario.horario",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F503%2FCal%2FPM25%2F%2FPM25.horario.horario.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/503_PM25_2023_2025.txt",
+    "bytes": 1424232,
+    "sha256": "3956b2707061321f6d7cdb4a9f07216e6d9cf80202567b1c5f8f6308ac7aaf49",
+    "download_utc": "2026-10-04T15:52:03.838051+00:00",
+    "plot_variables": [
+      "# 1. Registros validados (ug/m3) (Ty>=2018 OR (Ty>=2017 AND Tm>=5 AND Td>=1)?round(x1[1], 0):x1[1])",
+      "# 2. Registros preliminares (ug/m3) (!exist(x1[1])?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x2[1], 0):x2[1]):@)",
+      "# 3. Registros no validados (ug/m3) ((!exist(x1[1]) AND !exist(x2[1]))?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x3[1], 0):x3[1]):@)"
+    ]
+  },
+  {
+    "station_id": "278",
+    "station_code": "503",
+    "station": "La Greda",
+    "commune": "Puchuncaví",
+    "parameter": "WDIR",
+    "group": "Met",
+    "macro": "horario_010_spec",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F503%2FMet%2FWDIR%2F%2Fhorario_010_spec.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/503_WDIR_2023_2025.txt",
+    "bytes": 738547,
+    "sha256": "7c7b43cbbda95a9db2ad55b93ac30139e3b370e39122fc9773608f06fb3a3734",
+    "download_utc": "2026-10-04T15:52:04.918922+00:00",
+    "plot_variables": [
+      "# 1. x1[1] (Deg.M) (x1[1])"
+    ]
+  },
+  {
+    "station_id": "278",
+    "station_code": "503",
+    "station": "La Greda",
+    "commune": "Puchuncaví",
+    "parameter": "WSPD",
+    "group": "Met",
+    "macro": "horario_010",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F503%2FMet%2FWSPD%2F%2Fhorario_010.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/503_WSPD_2023_2025.txt",
+    "bytes": 738548,
+    "sha256": "ca220c0d155af23f5d41cb5618a16db145098af1ea38741717cb40d87e5d8bfd",
+    "download_utc": "2026-10-04T15:52:03.854829+00:00",
+    "plot_variables": [
+      "# 1. x1[1] (m/s) (x1[1])"
+    ]
+  },
+  {
+    "station_id": "185",
+    "station_code": "509",
+    "station": "Concón",
+    "commune": "Concón",
+    "parameter": "0001",
+    "group": "Cal",
+    "macro": "0001.horario.horario",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F509%2FCal%2F0001%2F%2F0001.horario.horario.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/509_0001_2023_2025.txt",
+    "bytes": 1424219,
+    "sha256": "b9ab1822a887e131cc666f82bc1a5f590f28a464fe3d19a78f566650823b1079",
+    "download_utc": "2026-10-04T15:52:04.945370+00:00",
+    "plot_variables": [
+      "# 1. Registros validados (ppb) (Ty>=2018 OR (Ty>=2017 AND Tm>=5 AND Td>=1)?round(x1[1], 2):x1[1])",
+      "# 2. Registros preliminares (ppb) (!exist(x1[1])?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x2[1], 2):x2[1]):@)",
+      "# 3. Registros no validados (ppb) ((!exist(x1[1]) AND !exist(x2[1]))?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x3[1], 2):x3[1]):@)"
+    ]
+  },
+  {
+    "station_id": "185",
+    "station_code": "509",
+    "station": "Concón",
+    "commune": "Concón",
+    "parameter": "PM10",
+    "group": "Cal",
+    "macro": "PM10.horario.horario",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F509%2FCal%2FPM10%2F%2FPM10.horario.horario.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/509_PM10_2023_2025.txt",
+    "bytes": 1424234,
+    "sha256": "9e280a7afd915024f47cc183ea53e8c7670de9dd9fcf06331e317f93e59556ea",
+    "download_utc": "2026-10-04T15:52:04.939605+00:00",
+    "plot_variables": [
+      "# 1. Registros validados (ug/m3N) (Ty>=2018 OR (Ty>=2017 AND Tm>=5 AND Td>=1)?round(x1[1], 0):x1[1])",
+      "# 2. Registros preliminares (ug/m3N) (!exist(x1[1])?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x2[1], 0):x2[1]):@)",
+      "# 3. Registros no validados (ug/m3N) ((!exist(x1[1]) AND !exist(x2[1]))?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x3[1], 0):x3[1]):@)"
+    ]
+  },
+  {
+    "station_id": "185",
+    "station_code": "509",
+    "station": "Concón",
+    "commune": "Concón",
+    "parameter": "PM25",
+    "group": "Cal",
+    "macro": "PM25.horario.horario",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F509%2FCal%2FPM25%2F%2FPM25.horario.horario.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/509_PM25_2023_2025.txt",
+    "bytes": 1424229,
+    "sha256": "8da61e33f1d36cb279b0fb1de938787dd193f4ff2cce2cfcca7e75817ca78976",
+    "download_utc": "2026-10-04T15:52:04.932868+00:00",
+    "plot_variables": [
+      "# 1. Registros validados (ug/m3) (Ty>=2018 OR (Ty>=2017 AND Tm>=5 AND Td>=1)?round(x1[1], 0):x1[1])",
+      "# 2. Registros preliminares (ug/m3) (!exist(x1[1])?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x2[1], 0):x2[1]):@)",
+      "# 3. Registros no validados (ug/m3) ((!exist(x1[1]) AND !exist(x2[1]))?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x3[1], 0):x3[1]):@)"
+    ]
+  },
+  {
+    "station_id": "185",
+    "station_code": "509",
+    "station": "Concón",
+    "commune": "Concón",
+    "parameter": "RHUM",
+    "group": "Met",
+    "macro": "horario_000",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F509%2FMet%2FRHUM%2F%2Fhorario_000.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/509_RHUM_2023_2025.txt",
+    "bytes": 738551,
+    "sha256": "d4a0df82be7ce6cf3f12f1146a79b69e301d6225c2293d63359e8e4d4ffe59e8",
+    "download_utc": "2026-10-04T15:52:04.977717+00:00",
+    "plot_variables": [
+      "# 1. x1[1] (%) (x1[1])"
+    ]
+  },
+  {
+    "station_id": "185",
+    "station_code": "509",
+    "station": "Concón",
+    "commune": "Concón",
+    "parameter": "TEMP",
+    "group": "Met",
+    "macro": "horario_002",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F509%2FMet%2FTEMP%2F%2Fhorario_002.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/509_TEMP_2023_2025.txt",
+    "bytes": 738548,
+    "sha256": "92c84dc6a0f6a3c7a3730119c75680196d9beabfc0c64b7f98d244823423d00b",
+    "download_utc": "2026-10-04T15:52:04.966560+00:00",
+    "plot_variables": [
+      "# 1. x1[1] (deg.C) (x1[1])"
+    ]
+  },
+  {
+    "station_id": "185",
+    "station_code": "509",
+    "station": "Concón",
+    "commune": "Concón",
+    "parameter": "WDIR",
+    "group": "Met",
+    "macro": "horario_000_spec",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F509%2FMet%2FWDIR%2F%2Fhorario_000_spec.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/509_WDIR_2023_2025.txt",
+    "bytes": 738543,
+    "sha256": "57f4c70f0c86fb33431f4c2b101559d1d547d527e352953aead30438afcb14ba",
+    "download_utc": "2026-10-04T15:52:05.912107+00:00",
+    "plot_variables": [
+      "# 1. x1[1] (Deg.M) (x1[1])"
+    ]
+  },
+  {
+    "station_id": "185",
+    "station_code": "509",
+    "station": "Concón",
+    "commune": "Concón",
+    "parameter": "WSPD",
+    "group": "Met",
+    "macro": "horario_010",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F509%2FMet%2FWSPD%2F%2Fhorario_010.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/509_WSPD_2023_2025.txt",
+    "bytes": 738547,
+    "sha256": "db4a18b06480998674d15f8bceb9082c716e7209bef6d24743437546cf638c31",
+    "download_utc": "2026-10-04T15:52:04.949010+00:00",
+    "plot_variables": [
+      "# 1. x1[1] (m/s) (x1[1])"
+    ]
+  },
+  {
+    "station_id": "204",
+    "station_code": "539",
+    "station": "Centro Quintero",
+    "commune": "Quintero",
+    "parameter": "0001",
+    "group": "Cal",
+    "macro": "0001.horario.horario",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F539%2FCal%2F0001%2F%2F0001.horario.horario.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/539_0001_2023_2025.txt",
+    "bytes": 1424242,
+    "sha256": "9f4a9aec2dab95569d478f2bdc549a0dc4431917817feb5116d2a969540e759a",
+    "download_utc": "2026-10-04T15:52:03.914038+00:00",
+    "plot_variables": [
+      "# 1. Registros validados (ppb) (Ty>=2018 OR (Ty>=2017 AND Tm>=5 AND Td>=1)?round(x1[1], 2):x1[1])",
+      "# 2. Registros preliminares (ppb) (!exist(x1[1])?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x2[1], 2):x2[1]):@)",
+      "# 3. Registros no validados (ppb) ((!exist(x1[1]) AND !exist(x2[1]))?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x3[1], 2):x3[1]):@)"
+    ]
+  },
+  {
+    "station_id": "204",
+    "station_code": "539",
+    "station": "Centro Quintero",
+    "commune": "Quintero",
+    "parameter": "PM10",
+    "group": "Cal",
+    "macro": "PM10.horario.horario",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F539%2FCal%2FPM10%2F%2FPM10.horario.horario.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/539_PM10_2023_2025.txt",
+    "bytes": 1424255,
+    "sha256": "ef0feeb948188e7cdd9a6284c57c217ea04d7dad497981a9fa29d53460955cee",
+    "download_utc": "2026-10-04T15:52:03.895078+00:00",
+    "plot_variables": [
+      "# 1. Registros validados (ug/m3N) (Ty>=2018 OR (Ty>=2017 AND Tm>=5 AND Td>=1)?round(x1[1], 0):x1[1])",
+      "# 2. Registros preliminares (ug/m3N) (!exist(x1[1])?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x2[1], 0):x2[1]):@)",
+      "# 3. Registros no validados (ug/m3N) ((!exist(x1[1]) AND !exist(x2[1]))?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x3[1], 0):x3[1]):@)"
+    ]
+  },
+  {
+    "station_id": "204",
+    "station_code": "539",
+    "station": "Centro Quintero",
+    "commune": "Quintero",
+    "parameter": "PM25",
+    "group": "Cal",
+    "macro": "PM25.horario.horario",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F539%2FCal%2FPM25%2F%2FPM25.horario.horario.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/539_PM25_2023_2025.txt",
+    "bytes": 1424253,
+    "sha256": "ea64ed5a6a0ad03c42d268ed0b3410183c9ecbf6fde941295197b84d06b3486b",
+    "download_utc": "2026-10-04T15:52:03.878624+00:00",
+    "plot_variables": [
+      "# 1. Registros validados (ug/m3) (Ty>=2018 OR (Ty>=2017 AND Tm>=5 AND Td>=1)?round(x1[1], 0):x1[1])",
+      "# 2. Registros preliminares (ug/m3) (!exist(x1[1])?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x2[1], 0):x2[1]):@)",
+      "# 3. Registros no validados (ug/m3) ((!exist(x1[1]) AND !exist(x2[1]))?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x3[1], 0):x3[1]):@)"
+    ]
+  },
+  {
+    "station_id": "204",
+    "station_code": "539",
+    "station": "Centro Quintero",
+    "commune": "Quintero",
+    "parameter": "WDIR",
+    "group": "Met",
+    "macro": "horario_010_spec",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F539%2FMet%2FWDIR%2F%2Fhorario_010_spec.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/539_WDIR_2023_2025.txt",
+    "bytes": 738554,
+    "sha256": "17eded13c9cf573cd25afaf70e7af684bc1b694afb806c1b65be0d14e6bb62a7",
+    "download_utc": "2026-10-04T15:52:04.989081+00:00",
+    "plot_variables": [
+      "# 1. x1[1] (Deg.M) (x1[1])"
+    ]
+  },
+  {
+    "station_id": "204",
+    "station_code": "539",
+    "station": "Centro Quintero",
+    "commune": "Quintero",
+    "parameter": "WSPD",
+    "group": "Met",
+    "macro": "horario_010",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F539%2FMet%2FWSPD%2F%2Fhorario_010.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/539_WSPD_2023_2025.txt",
+    "bytes": 738548,
+    "sha256": "f16d04bda2629e69f9aca4f48b99dc6e60b60c6610787430012481d30481a43a",
+    "download_utc": "2026-10-04T15:52:03.933696+00:00",
+    "plot_variables": [
+      "# 1. x1[1] (m/s) (x1[1])"
+    ]
+  },
+  {
+    "station_id": "188",
+    "station_code": "548",
+    "station": "Ventanas",
+    "commune": "Puchuncaví",
+    "parameter": "0001",
+    "group": "Cal",
+    "macro": "0001.horario.horario",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F548%2FCal%2F0001%2F%2F0001.horario.horario.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/548_0001_2023_2025.txt",
+    "bytes": 1424222,
+    "sha256": "c7b39a1e86698ec6e9d791142f5166f203079eacadf44ea0aea36009c2e0c6f5",
+    "download_utc": "2026-10-04T15:52:03.770707+00:00",
+    "plot_variables": [
+      "# 1. Registros validados (ppb) (Ty>=2018 OR (Ty>=2017 AND Tm>=5 AND Td>=1)?round(x1[1], 2):x1[1])",
+      "# 2. Registros preliminares (ppb) (!exist(x1[1])?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x2[1], 2):x2[1]):@)",
+      "# 3. Registros no validados (ppb) ((!exist(x1[1]) AND !exist(x2[1]))?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x3[1], 2):x3[1]):@)"
+    ]
+  },
+  {
+    "station_id": "188",
+    "station_code": "548",
+    "station": "Ventanas",
+    "commune": "Puchuncaví",
+    "parameter": "PM10",
+    "group": "Cal",
+    "macro": "PM10.horario.horario",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F548%2FCal%2FPM10%2F%2FPM10.horario.horario.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/548_PM10_2023_2025.txt",
+    "bytes": 1424237,
+    "sha256": "50a4b73bafb411e64fcfd6a865cfa400c4f7c8381505a11c1bafdf70cba4b221",
+    "download_utc": "2026-10-04T15:52:03.811558+00:00",
+    "plot_variables": [
+      "# 1. Registros validados (ug/m3N) (Ty>=2018 OR (Ty>=2017 AND Tm>=5 AND Td>=1)?round(x1[1], 0):x1[1])",
+      "# 2. Registros preliminares (ug/m3N) (!exist(x1[1])?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x2[1], 0):x2[1]):@)",
+      "# 3. Registros no validados (ug/m3N) ((!exist(x1[1]) AND !exist(x2[1]))?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x3[1], 0):x3[1]):@)"
+    ]
+  },
+  {
+    "station_id": "188",
+    "station_code": "548",
+    "station": "Ventanas",
+    "commune": "Puchuncaví",
+    "parameter": "PM25",
+    "group": "Cal",
+    "macro": "PM25.horario.horario",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F548%2FCal%2FPM25%2F%2FPM25.horario.horario.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/548_PM25_2023_2025.txt",
+    "bytes": 1424232,
+    "sha256": "78326f13b75007a1db6bc9a848d11617f3bbe073b63f5d3a1b52d3782f2b29e8",
+    "download_utc": "2026-10-04T15:52:03.817354+00:00",
+    "plot_variables": [
+      "# 1. Registros validados (ug/m3) (Ty>=2018 OR (Ty>=2017 AND Tm>=5 AND Td>=1)?round(x1[1], 0):x1[1])",
+      "# 2. Registros preliminares (ug/m3) (!exist(x1[1])?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x2[1], 0):x2[1]):@)",
+      "# 3. Registros no validados (ug/m3) ((!exist(x1[1]) AND !exist(x2[1]))?(Ty>=2018 OR(Ty>=2017 AND Tm>=5 AND Td>=1)?round(x3[1], 0):x3[1]):@)"
+    ]
+  },
+  {
+    "station_id": "188",
+    "station_code": "548",
+    "station": "Ventanas",
+    "commune": "Puchuncaví",
+    "parameter": "WDIR",
+    "group": "Met",
+    "macro": "horario_010_spec",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F548%2FMet%2FWDIR%2F%2Fhorario_010_spec.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/548_WDIR_2023_2025.txt",
+    "bytes": 738549,
+    "sha256": "8e719f8eadd13cd116cdcd548937b8d0f1bd7bd1503e3c393bcf4406ec9a2269",
+    "download_utc": "2026-10-04T15:52:04.916463+00:00",
+    "plot_variables": [
+      "# 1. x1[1] (Deg.M) (x1[1])"
+    ]
+  },
+  {
+    "station_id": "188",
+    "station_code": "548",
+    "station": "Ventanas",
+    "commune": "Puchuncaví",
+    "parameter": "WSPD",
+    "group": "Met",
+    "macro": "horario_010",
+    "url": "https://sinca.mma.gob.cl/cgi-bin/APUB-MMA/apub.tsindico2.cgi?outtype=txt&macro=.%2FRV%2F548%2FMet%2FWSPD%2F%2Fhorario_010.ic&path=%2Fusr%2Fairviro%2Fdata%2FCONAMA%2F&lang=esp&rsrc=&macropath=&from=22123100&to=26010123",
+    "file": "data/raw/548_WSPD_2023_2025.txt",
+    "bytes": 738547,
+    "sha256": "2f4c455f99df160dea913d2d0d4b69a520dd2bddd901420868249d265567e58b",
+    "download_utc": "2026-10-04T15:52:03.776399+00:00",
+    "plot_variables": [
+      "# 1. x1[1] (m/s) (x1[1])"
+    ]
+  }
+]
