@@ -1,6 +1,6 @@
 # Avance 3 · Pronóstico horario de MP2.5
 
-Para incorporar el análisis a su copia del proyecto, descompriman esta actualización sobre la raíz del repositorio y conserven la carpeta `src/`. El CSV que ya viene en el repositorio debe seguir en `data/processed/dataset_horario_cqp_2023_2025.csv`.
+Usamos el CSV del Avance 2, ubicado en `data/processed/dataset_horario_cqp_2023_2025.csv`. Si tienen el código en ZIP, descomprímanlo en la raíz del repositorio conservando la carpeta `src/`.
 
 Desde la raíz, con Python 3.12 o posterior:
 
@@ -14,9 +14,9 @@ El script guarda la tabla de métricas, el resumen de resultados y las figuras e
 
 ## Evaluación
 
-- Pronóstico de MP2.5 de la hora siguiente, suponiendo disponible la medición de la hora previa. Cada rezago usa la hora exacta y la misma estación. La media móvil excluye la hora objetivo.
-- Ridge y Random Forest reciben las mismas entradas. La persistencia usa el MP2.5 de una hora antes como referencia. Los cinco cortes de validación separan por hora completa en 2023–2024. La prueba común es 2025.
-- Se elige entre Ridge y Random Forest por el RMSE medio de validación. Los SHAP aproximan contribuciones mediante 40 permutaciones con un fondo tomado de entrenamiento. El script comprueba que el valor base y las contribuciones sumen a la predicción en cada caso.
+- Pronosticamos el MP2.5 de la hora siguiente suponiendo que tenemos la medición de la hora previa. Calculamos los rezagos por estación y hora exacta. La media móvil usa las seis horas anteriores.
+- Comparamos Ridge y Random Forest con las mismas entradas y usamos la última medición de MP2.5 como referencia. Validamos con cinco cortes cronológicos en 2023–2024 y reservamos 2025 para la prueba.
+- Elegimos el modelo con menor RMSE medio de validación. Estimamos los valores SHAP con 40 permutaciones y filas de entrenamiento como referencia. Comprobamos que el valor base y los aportes sumen la predicción de cada caso.
 - Se probó con Python 3.14.6, NumPy 2.4.6, pandas 3.0.3, Matplotlib 3.11.0 y scikit-learn 1.9.0.
 
 La presentación PPTX es el archivo para entregar. Estos archivos permiten reproducir la evidencia.

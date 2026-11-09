@@ -60,7 +60,7 @@ def preparar_datos(path):
     if not raw[TIME].eq(raw[TIME].dt.floor("h")).all():
         raise ValueError("Todas las marcas de tiempo deben corresponder a horas enteras.")
 
-    # Cada búsqueda usa la hora exacta. Los huecos permanecen como NaN.
+    # Buscamos la hora exacta para no saltarnos horas sin datos.
     raw = raw.sort_values([STATION, TIME]).reset_index(drop=True)
     history = raw.set_index([STATION, TIME])
     frame = raw[[STATION, TIME, TARGET]].copy()
@@ -68,7 +68,7 @@ def preparar_datos(path):
         keys = pd.MultiIndex.from_arrays([raw[STATION], raw[TIME] - pd.Timedelta(hours=hours)])
         frame[feature] = history[column].reindex(keys).to_numpy()
 
-    # La ventana [t−6 h, t) excluye el objetivo e impide mezclar estaciones.
+    # Promediamos las seis horas anteriores de la misma estación.
     rolling = raw.groupby(STATION).rolling("6h", on=TIME, closed="left", min_periods=2)[TARGET].mean()
     frame["mp25_media_6h"] = rolling.reindex(history.index).to_numpy()
     angle = np.deg2rad(frame.pop("viento_dir_lag_1h"))
@@ -121,7 +121,6 @@ def evaluar(train, test, jobs):
     models = construir_modelos(jobs)
     scores, forecasts = {}, {}
     for name, model in {"Persistencia": None, **models}.items():
-        print(f"Validación temporal y prueba: {name}", flush=True)
         def predict(rows):
             return rows[LAG].to_numpy() if model is None else model.predict(rows[FEATURES])
 
@@ -146,10 +145,10 @@ def evaluar(train, test, jobs):
 
 
 def shap_por_permutaciones(model, sample, train, paths=40):
-    """SHAP interventional aproximado. Cada trayectoria aporta una suma aditiva.
+    """Aproximamos los valores SHAP con permutaciones.
 
-    El fondo contiene filas de entrenamiento. Las codificaciones seno/coseno
-    entran juntas para explicar una sola variable circular.
+    Usamos filas de entrenamiento como referencia. Agrupamos seno y coseno
+    para medir juntos los aportes de cada variable circular.
     """
     rng = np.random.default_rng(43)
     groups = list(GROUPS.values())
@@ -270,7 +269,6 @@ def main():
     if train.empty or test.empty:
         raise ValueError("Se requieren observaciones elegibles de 2023–2024 y 2025.")
     scores, forecasts, winner, model = evaluar(train, test, args.jobs)
-    print(f"SHAP del modelo seleccionado por RMSE de validación: {winner}", flush=True)
     pred = forecasts[winner]
     accurate, error, error_rule = casos_de_prueba(test, pred)
     sample = test.sample(n=min(320, len(test)), random_state=42)
@@ -311,8 +309,6 @@ def main():
     ]
     pd.DataFrame(rows).to_csv(out / "metricas.csv", index=False)
     (out / "resultados.json").write_text(json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False), encoding="utf-8")
-    print(pd.DataFrame(rows).to_string(index=False), flush=True)
-    print(f"Evidencia guardada en {out.resolve()}", flush=True)
 
 
 if __name__ == "__main__":
